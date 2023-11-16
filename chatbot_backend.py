@@ -36,8 +36,6 @@ def chatbot():
 
         messages.append({"role": "user", "content": message})
 
-        
-
         response = openai.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=messages
